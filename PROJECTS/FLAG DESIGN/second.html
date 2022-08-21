@@ -1,0 +1,506 @@
+<head>
+<!--
+<meta http-equiv="refresh" content="3;new.html">-->
+
+    <style>
+	
+        body{
+            background-image: linear-gradient(orange 20%,white 50%,green 100%);
+        }
+        #logo{
+            height: 70px;
+            position: absolute;
+            top:7px;
+            left:1.5%;
+            opacity: 0.8;
+        }
+        #logo0{
+            height: 100px;
+            position: absolute;
+            top:10px;
+            left:45%;
+			animation:move3 5s infinite;
+			
+        }
+		@keyframes move3{
+		0%{transform:rotate(180deg);}
+		25%{transform:rotate(-90deg);}
+		100%{transform:scale(2,1.5);}
+	
+		}
+		
+		
+        #me{
+            height: 70px;
+            margin-top: 10px;
+            opacity: 0.8;
+            position: absolute;
+            top:0px;
+            border-radius: 50%;
+            right:2%;
+        }
+
+        #logo1{
+            
+            height: 150px;
+            position: absolute;
+            top:64%;
+            left:48.5%;
+            height: 150px;
+            width: 85px;
+            background: gray;
+        }
+
+
+
+        #logo2{
+            height: 150px;
+            position: absolute;
+            top:62%;
+            height: 150px;
+            width: 90px;
+            left:79%;
+            
+        }
+        #logo33{
+            height: 150px;
+            position: absolute;
+            top:62%;
+            height: 140px;
+            width: 88px;
+            left:34%;
+           
+        }
+     
+        #logo3{
+            height: 150px;
+            position: absolute;
+            top:80%;
+            height: 100px;
+            width: 88px;
+            left:25%; 
+			
+			animation:move4 5s infinite;
+        }
+		
+		@keyframes move4{
+		0%{transform:scale(-1,1);}
+		
+		}
+        #logo4{
+            height: 100px;
+            position: absolute;
+            top:75%;
+            height: 150px;
+            width: 88px;
+            left:40%; 
+			animation:move4 5s infinite;
+        }
+		@keyframes move4{
+		
+		0%{transform:scale(-1,1);}
+		}
+		
+        #logo5{
+        height: 150px;
+        position: absolute;
+        top:75%;
+		width: 88px;
+        left:70%; 
+		animation:move4 5s infinite;
+        }
+		@keyframes move4{
+		
+		0%{transform:scale(-1,1);}
+		}
+        
+        #logo6{
+            height: 150px;
+            position: absolute;
+            top:75%;
+            height: 150px;
+            width: 88px;
+            left:90%;
+			animation:move4 5s infinite;
+        }
+		@keyframes move4{
+		
+		0%{transform:scale(-1,0.5);}
+		}
+        			
+        
+
+
+
+        .flagline{
+            background: black;
+            width: 4px;
+            height:220px;
+            position: absolute;
+            top:140px;
+            left: 846px;
+        }
+        .flagfooter{
+            background:gray;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            border: 2px solid rgb(0, 0, 0);
+            top:354px;
+            left: 800px;
+        }
+        .orange{
+            background: orange;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:140px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 850px;
+        }
+        .white{
+            background: rgb(255, 255, 255);
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:160px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 850px;
+        }
+        .green{
+            background: green;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:180px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 850px;
+        }
+
+        /*orange flag */
+        .orange1{
+            
+        }
+        .orange1{
+        
+        background:orange;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:250px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 500px;
+        position:absolute;
+        animation:move 5s infinite;
+        }
+
+        @keyframes move{
+		0% {top:250px;left:500px;background:orange}
+		33% {top:180px;left:500px;background:white}
+		99% {top:180px;left:850px;background:green}
+		
+		}
+		.orange11{
+		background:orange;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:250px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 500px;
+        position:absolute;
+		}
+        
+        .orange1line{
+            background: rgb(0, 0, 0);
+            width: 3px;
+            height:120px;
+            position: absolute;
+            top:250px;
+            left: 500px;
+        }
+        .orange1footer{
+            background:gray;
+            width: 50px;
+            height:10px;
+            position: absolute;
+            border: 2px solid rgb(0, 0, 0);
+            top:364px;
+            left: 475px;
+        }
+
+
+
+        /*white flag */
+        .white1{
+            background:white;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:250px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 700px;
+            animation:move1 5s infinite;
+        }
+
+        @keyframes move1{
+		0% {top:250px;left:700px;background:white}
+		33% {top:140px;left:700px;background:green}
+		99% {top:140px;left:850px;background:orange}
+		
+		}
+		.white11{
+		background:white;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:250px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 700px;
+		}
+        .white1line{
+            background: rgb(0, 0, 0);
+            width: 3px;
+            height:120px;
+            position: absolute;
+            top:250px;
+            left: 700px;
+        }
+        .white1footer{
+            background:gray;
+            width: 50px;
+            height:10px;
+            position: absolute;
+            border: 2px solid rgb(0, 0, 0);
+            top:364px;
+            left: 675px;
+        }
+
+        /*green flag */
+        .green1{
+            background:green;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:250px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 1100px;
+            animation:move2 5s infinite;
+        }
+
+        @keyframes move2{
+		0% {top:250px;left:1100px;background:green}
+		33% {top:160px;left:1100px;background:orange}
+		99% {top:160px;left:850px;background:white}
+		
+		}
+		.green11{
+		 background:green;
+            width: 100px;
+            height:20px;
+            position: absolute;
+            top:250px;
+            border: 1px solid rgb(0, 0, 0);
+            left: 1100px;
+		}
+        .green1line{
+            background: rgb(0, 0, 0);
+            width: 3px;
+            height:120px;
+            position: absolute;
+            top:250px;
+            left: 1100px;
+        }
+        .green1footer{
+            background:gray;
+            width: 50px;
+            height:10px;
+            position: absolute;
+            border: 2px solid rgb(0, 0, 0);
+            top:364px;
+            left: 1075px;
+        }
+        
+      #gani{
+        padding-top: 2px;
+        padding-left: 40px;
+      }
+      .copy{
+        font-size: 13px;
+        
+        opacity: 0.3;
+        color: white;
+        position: absolute;
+        bottom: 7px;
+      }
+      .army{
+        text-align: center;
+        height:20px;
+        width: 88px;
+        color: white;
+        background: orange;
+        position: absolute;
+        top:389px;
+        left:459px;
+		animation:arm 2s infinite;
+		
+	}
+	 @keyframes arm{
+		0% {background:orange}
+		33% {background:white;color:orange}
+		
+		}
+	
+    .airforce{
+        text-align: center;
+        height:20px;
+        width: 88px;
+        color: blue;
+        background: white;
+        position: absolute;
+        top:389px;
+        left:659px;
+    animation:arm1 2s infinite;
+		
+	}
+	 @keyframes arm1{
+		0% {background:white}
+		33% {background:blue;color:white;}
+		
+		}
+    .navy{
+        text-align: center;
+        height:20px;
+        width: 88px;
+        color: white;
+        background: green;
+        position: absolute;
+        top:389px;
+        left:1059px;
+    animation:arm2 2s infinite;
+		
+	}
+	 @keyframes arm2{
+		0% {background:green}
+		33% {background:white;color:green;}
+		
+	}
+    </style>
+</head>
+<BODY BGCOLOR="LIGHTBLUE">
+
+
+<div class="div1"></div>
+
+
+
+    <svg height="651" width="1330">
+    <line x1=0 y1=600  x2=1330 y2=600 stroke="black" stroke-width=5>
+    </line>
+    <line x1=0 y1=500  x2=1330 y2=500 stroke="black" stroke-width=5>
+    </line>
+    
+    
+    <!-- platform -->
+    <line x1=50 y1=500  x2=30 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=200 y1=500  x2=180 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=350 y1=500  x2=330 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=500 y1=500  x2=480 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=650 y1=500  x2=630 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=800 y1=500  x2=780 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=800 y1=500  x2=780 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=950 y1=500  x2=930 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=1100 y1=500  x2=1080 y2=600 stroke="black" stroke-width=5></line>
+    <line x1=1250 y1=500  x2=1230 y2=600 stroke="black" stroke-width=5></line>
+    
+    <!--wheels -->
+    <circle cx=400 cy=570 r=25 stroke=5></circle>
+    <circle cx=600 cy=570 r=25 stroke=5></circle>
+    <circle cx=800 cy=570 r=25 stroke=5></circle>
+    <circle cx=1200 cy=570 r=25 stroke=5></circle>
+    <circle cx=1000 cy=570 r=25 stroke=5></circle>
+    
+    
+    
+    <!-- dabba -->
+    <rect height=200  width=600 stroke="black" fill="#FFD700" x=300 y=370></rect>
+    <rect height=130  width=600 stroke="black" fill="brown" x=300 y=440></rect>
+    
+    <rect height=200  width=600 stroke="black" fill="#FFD700" x=920 y=370></rect>
+    <rect height=130  width=600 stroke="black" fill="brown" x=920 y=440></rect>
+    
+    <!-- door-->
+    <rect height=190  width=90 stroke="black" x=450 y=380 fill="gray"></rect>
+    <rect height=190  width=90 stroke="black" x=650 y=380 fill="gray"></rect>
+    <rect height=190  width=90 stroke="black" x=1050 y=380 fill="gray"></rect>
+    
+    
+    <!-- signal-->
+    <line x1=55 y1=300  x2=55 y2=450 stroke="black" stroke-width=5></line>
+    <rect height=70  width=30 stroke="gray" stroke-width=3 fill="black" x=40 y=250></rect>
+    <rect height=10  width=40 stroke="gray" stroke-width=3 fill="black" x=35 y=450></rect>
+    <circle cx=55 cy=265 r=5 stroke=5 fill="red"></circle>
+    <circle cx=55 cy=285 r=5 stroke=5 fill="YELLOW"></circle>
+    <circle cx=55 cy=305 r=5 stroke=5 fill="green"></circle>
+   
+</svg>
+
+
+<img src="itvedantlogo.png" id="logo">
+<img src="hi.png" id="logo0">
+<img src="1.png" id="logo1">
+<img src="logo1.jpg" id="me">
+
+
+
+
+<img src="2.png" id="logo2">
+<img src="33.png" id="logo33">
+<img src="3.png" id="logo3">
+<img src="4.png" id="logo4">
+<img src="6.png" id="logo5">
+<img src="7.png" id="logo6">
+
+ 
+<!-- main flag -->
+<div class="flagline"></div>
+<div class="flagfooter"></div>
+<div class="orange"></div>
+<div class="white">
+ <img src="blue.png"  id="gani" height="15px"></div>
+<div class="green"></div>
+
+
+<!-- orange flag -->
+<div class="orange1"></div>
+<div class="orange11"></div>
+
+
+<!-- white flag -->
+<div class="white1"></div>
+<div class="white11"></div>
+
+<!-- green flag -->
+<div class="green1"> <img src="blue.png"  id="gani" height="15px"></div>
+<div class="green11"> </div>
+
+<!-- orange1line -->
+<div class="orange1line"></div>
+<div class="orange1footer"></div>
+
+<!-- white1line -->
+<div class="white1line"></div>
+<div class="white1footer"></div>
+
+<!-- green1line -->
+<div class="green1line"></div>
+<div class="green1footer"></div>
+
+
+
+<div class="army">ARMY</div>
+<div class="airforce">AIRFORCE</div>
+<div class="navy">NAVY</div>
+
+
+<div class="copy">@Copyright 2022 Ganesh Shinde</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="6;second.html"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+            background: black;
+            color: white;
+        }
+        .center{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .ring{
+            position: absolute;
+            width: 200px;
+            height:200px;
+            border-radius: 50%;   
+            animation: ring 3s linear infinite;   
+          }
+          @keyframes ring {
+            0%{transform: rotate(0deg);
+            box-shadow: 1px 5px 5px orange;}
+            
+            33.33%{transform: rotate(120deg);
+            box-shadow: 1px 5px 5px orange;}
+
+            66.33%{transform: rotate(240deg);
+            box-shadow: 1px 5px 5px white;}
+
+            99.33%{transform: rotate(360deg);
+            box-shadow: 1px 5px 5px green;}
+          }
+        .ring:before{
+            position: absolute;
+            content: '';
+            left:0;
+            top:0;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 5px white;
+            filter: blur(30px);
+
+        }
+        span{
+            color: white;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 200px;
+           animation: text 3s linear infinite;
+        }
+        @keyframes text {
+            0%{color:orange}
+            50%{color:white}
+            100%{color: green;}
+            
+        }
+      h3{
+        color: white;
+        position: absolute;
+        top: 68%;
+        left:43.5%;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="ring">
+            
+
+        </div>
+        <span><b>I.T.VEDANT</b></span>
+        
+    </div>
+    <h4></h4>
+    <h3>Decode Your Dreams</h3>
+</body>
+</html>
