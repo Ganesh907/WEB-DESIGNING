@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            document.write("H "+screen.height);
+            document.write("<br>W "+screen.width);
+
+        }
+        fun();
+        function next(){
+            window.history.forward();
+        }
+        function prev(){
+            window.history.back();
+        }
+        function open1(){
+            window.open();
+        }
+        function close1(){
+            window.close();
+        }
+        function print1(){
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" value="next" onclick="next()">
+    <input type="submit" value="prev" onclick="prev()">
+    <input type="submit" value="open" onclick="open1()">
+    <input type="submit" value="close" onclick="close1()">
+    <input type="submit" value="print" onclick="print1()">
+
+    
+</body>
+</html>

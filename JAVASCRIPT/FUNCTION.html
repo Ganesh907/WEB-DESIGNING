@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script>
+		
+		//functions
+		 function gani(){
+		//document.write("GANESH&nbsp;");
+		//document.write("SHINDE");
+		alert("HTML");
+		}
+		function gani1(){
+		alert("CSS");
+		}
+		function gani2(){
+		alert("JAVASCRIPT");
+		}
+		function myprint()
+		{
+			window.print();
+		}
+	</script>
+
+
+	<style>
+		.gani{
+			position: absolute;
+			left: 35%;
+			top: 30%;
+
+		}
+		#ganesh:hover,#ganesh1:hover,#ganesh2:hover{
+			color:gray;
+			background: white;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	
+<div class="gani">	
+<input type="submit" id="ganesh" value="HTML" onclick="gani()" class="btn btn-secondary">
+<input type="submit" id="ganesh1" value="CSS" onclick="gani1()" class="btn btn-success" >
+<input type="submit"  id="ganesh2" value="JAVASCRIPT" onclick="gani2()" class="btn btn-danger"><br><br>
+<input type="submit"  id="ganesh2" value="PRINT" onclick="myprint()" class="btn btn-warning">
+</div>
+
+
+
+
+
+
+</body>
+</html>

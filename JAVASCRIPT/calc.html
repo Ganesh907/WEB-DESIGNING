@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus1(){
+        var num1,num2,result;
+        num1=eval(document.getElementById("number1").value);
+        num2=eval(document.getElementById("number2").value);
+        result=num1+num2;
+        document.getElementById("result").innerHTML=result;
+        }
+        function min1(){
+            var num1,num2,result;
+            num1=eval(document.getElementById("number1").value);
+            num2=eval(document.getElementById("number2").value);
+            result=num1-num2;
+            document.getElementById("result").innerHTML=result;
+        }
+        function mul1(){
+            var num1,num2,result;
+            num1=eval(document.getElementById("number1").value);
+            num2=eval(document.getElementById("number2").value);
+            result=num1*num2;
+            document.getElementById("result").innerHTML=result;
+        }
+        function div1(){
+            var num1,num2,result;
+            num1=eval(document.getElementById("number1").value);
+            num2=eval(document.getElementById("number2").value);
+            result=num1/num2;
+            document.getElementById("result").innerHTML=result;
+        }
+
+    </script>
+</head>
+<body>
+    Number 1 <input type="number" id="number1"><br><br>
+    Number 2 <input type="number" id="number2"><br><br>
+
+    <input type="button"  value="+" id="1" onclick="plus1()">
+    <input type="button"  value="-" id="2" onclick="min1()">
+    <input type="button"  value="*" id="3" onclick="mul1()">
+    <input type="button"  value="/" id="4" onclick="div1()">
+<br>
+<br>
+<br>
+Result<span id="result"></span>
+    <!-- <input type="submit" value="Result" onclick="fun()"> -->
+
+</body>
+</html>

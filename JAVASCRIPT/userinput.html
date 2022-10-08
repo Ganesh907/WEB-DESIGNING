@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*function fun(){
+            var name,id,salary;
+            name=prompt("Enter your name : ");
+            id=eval(prompt("Enter your ID : "));
+            salary=eval(prompt("Enter your salary : "));
+        //eval cant be string.
+            alert("Emp name is : "+name);
+            alert("Emp name ID : "+id);
+            alert("Emp name salary : "+salary);
+        } */
+        function fun(){
+            var name,id,salary,mobile,email;
+            name=document.getElementById("ename").value;
+            id=eval(document.getElementById("eid").value);
+            salary=eval(document.getElementById("esal").value);
+           /* mobile=(document.getElementById("emob").value);
+            email=(document.getElementById("eemail").value);
+*/
+           /*
+            document.write("<br>Emp name is : "+name);
+            document.write("<br>Emp ID :"+id);
+            document.write("<br>Emp Salary : "+salary);
+            document.write("<br>Emp Salary : "+mobile);
+            document.write("<br>Emp Salary : "+email);
+            */
+            document.getElementById("dname").innerHTML=name;
+            document.getElementById("did").innerHTML=id;
+            document.getElementById("dsal").innerHTML=salary;
+        }
+    </script>
+   
+      
+</head>
+<body>
+  
+    Name<input type="text" id="ename"><br><br>
+    ID<input type="text" id="eid"><br><br>
+    Salary<input type="text" id="esal"><br><br>
+    <!-- Mobile Number<input type="number" id="emob"><br>
+    Email ID<input type="email" id="eemail"><br> -->
+    
+    <input type="submit" value="show" onclick="fun()">
+
+    <br>
+    
+    <br>
+    Name is <p  id="dname" readonly></p><br><br>
+    ID is<p id="did" readonly></p><br><br>
+    Sal is <p  id="dsal" readonly></p><br><br>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script>
+    function sum() {
+        var num1,num2,res;
+        num1=eval(document.getElementById("fno").value);
+        num2=eval(document.getElementById("sno").value);
+
+        res =num1+num2;
+        document.getElementById("res").innerHTML=res;
+
+
+    }
+
+    function minus() {
+        var num1,num2,res;
+        num1=eval(document.getElementById("fno").value);
+        num2=eval(document.getElementById("sno").value);
+
+        res =num1-num2;
+        document.getElementById("res").innerHTML=res;
+
+    }
+
+    function mul() {
+        var num1,num2,res;
+        num1=eval(document.getElementById("fno").value);
+        num2=eval(document.getElementById("sno").value);
+
+        res =num1*num2;
+        document.getElementById("res").innerHTML=res;
+    }
+    function div() {
+        var num1,num2,res;
+        fn=eval(document.getElementById("fno").value);
+        sn=eval(document.getElementById("sno").value);
+
+        res =num1/num2;
+        document.getElementById("res").innerHTML=res;
+
+    }
+  
+</script>
+
+<style>
+    body{
+        background: lightblue;
+    }
+    .calc{
+        position: absolute;
+        left: 40%;
+        top: 35%;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 30px;
+        background: gray;
+        
+    }
+    .btn{
+        background: gray;
+        color: aqua;
+        text-decoration: none;
+        border: 1px solid aqua;
+    }
+    #fno,#sno{
+        color: aqua;
+        text-decoration: none;
+        background: gray;
+        border: 2px solid aqua;
+        }
+    span{
+        color: aqua;
+    }
+    .cic{
+        position: absolute;
+        top: 29%;
+        left: 47%;
+        padding: 10px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        background: gray;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+</style>
+  
+</head>
+<body>
+    <div class="cic">Calculator</div>
+    <div class="calc">
+    first Number: <input type="number" id="fno"><br><br>
+    Second Number: <input type="number" id="sno"><br><br>
+
+    <input type="button" value="+" onclick="sum()" class="btn">
+    <input type="button" value="-" onclick="minus()" class="btn">
+    <input type="button" value="*" onclick="mul()" class="btn">
+    <input type="button" value="/" onclick="div()" class="btn"><br><br>
+
+    Result : <span id="res" ></span>
+</div>
+
+</body>
+</html>

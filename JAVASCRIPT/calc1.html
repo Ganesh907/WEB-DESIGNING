@@ -1,0 +1,48 @@
+<head>
+        <script>
+            var a,b,c,choice;
+            function fun(){
+                
+                a=eval(prompt('enter first number'));
+                b=eval(prompt('enter second number'));
+    
+                choice=eval(prompt('enter your choice:\n1:ADD\n2:Sub\n3:Mult\n4:Div'));
+    
+                switch(choice){
+                    case 1:
+                        c=a+b;
+                        alert('addition is '+c);
+                        break;
+    
+                    case 2:
+                        c=a-b;
+                        alert('subtraction is '+c);
+                        break;
+    
+                    case 3:
+                        c=a*b;
+                        alert('multiplication is '+c);
+                        break;
+    
+                    case 4:
+                        c=a/b;
+                        alert('division is '+c);
+                        break;
+    
+                    default:
+                        alert('invalid choice');
+    
+    
+    
+                }
+    
+            }
+        </script>
+    </head>
+    
+    <body>
+    
+        <input type="submit" value="Show" onclick="fun()">
+    
+    </body>
+    

@@ -1,0 +1,24 @@
+<head>
+    <script>
+     function fun2(){
+        var num,choice,USDINR;
+        num=eval(prompt("Enter Number : "));
+        choice=eval(prompt("Enter Your Choice\n 1:INR to USD\n2:USD to INR"));
+        
+        
+        if(choice==1){
+            USD=num*0.013;
+        document.write("Your total amount from this to this is : "+USD);
+        }
+        else {
+            INR=num*80;
+            alert("Your total amount from this to this is : "+INR);
+        }
+
+     }
+    </script>
+</head>
+<body>
+    <input type="submit" value="show" onclick="fun2()">
+    
+</body>
